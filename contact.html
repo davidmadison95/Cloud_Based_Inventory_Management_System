@@ -8,60 +8,82 @@
     <style>
         .contact-container {
             display: flex;
-            justify-content: space-between;
+            flex-wrap: wrap;
             gap: 2rem;
+            justify-content: space-between;
+            align-items: flex-start;
         }
-        .contact-form, .contact-info {
-            flex: 1;
-        }
-        .contact-form form {
-            display: flex;
-            flex-direction: column;
-        }
-        .contact-form label {
-            margin-top: 1rem;
-        }
-        .contact-form input,
-        .contact-form textarea {
-            width: 100%;
-            padding: 0.5rem;
-            margin-top: 0.5rem;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-        }
-        .contact-form textarea {
-            height: 150px;
-        }
-        .contact-form button {
-            margin-top: 1rem;
-            align-self: flex-start;
-        }
-        .contact-info {
-            background-color: #f0f0f0;
+        .contact-form {
+            flex: 1 1 400px;
+            background-color: #ffffff;
             padding: 2rem;
             border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .contact-info {
+            flex: 1 1 300px;
+            background-color: #f8f9fa;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: bold;
+            color: #333;
+        }
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 1rem;
+        }
+        .form-group textarea {
+            height: 150px;
+        }
+        .submit-btn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: background-color 0.3s ease;
+        }
+        .submit-btn:hover {
+            background-color: #45a049;
         }
         .contact-info h3 {
-            color: #ff6b6b;
+            color: #333;
             margin-top: 0;
+            margin-bottom: 1rem;
         }
         .contact-info p {
-            margin-bottom: 1rem;
+            margin-bottom: 0.5rem;
+        }
+        .contact-info strong {
+            color: #4CAF50;
         }
         .social-links {
             display: flex;
             gap: 1rem;
-            margin-top: 1rem;
+            margin-top: 1.5rem;
         }
         .social-links a {
-            color: #54a0ff;
+            color: #333;
             text-decoration: none;
             font-weight: bold;
+            transition: color 0.3s ease;
         }
-        @media (max-width: 768px) {
-            .contact-container {
-                flex-direction: column;
-            }
+        .social-links a:hover {
+            color: #4CAF50;
         }
     </style>
 </head>
@@ -82,42 +104,46 @@
 
     <main>
         <div class="container">
-            <h2>Contact Us</h2>
-            <p>We'd love to hear from you! Whether you have a question about features, pricing, need a demo, or anything else, our team is ready to answer all your questions.</p>
+            <h2>Get in Touch</h2>
+            <p>We're here to help and answer any question you might have. We look forward to hearing from you!</p>
             
             <div class="contact-container">
                 <div class="contact-form">
                     <h3>Send us a message</h3>
                     <form action="#" method="POST">
-                        <label for="name">Name:</label>
-                        <input type="text" id="name" name="name" required>
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
                         
-                        <label for="email">Email:</label>
-                        <input type="email" id="email" name="email" required>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
                         
-                        <label for="phone">Phone:</label>
-                        <input type="tel" id="phone" name="phone">
+                        <div class="form-group">
+                            <label for="phone">Phone (optional)</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
                         
-                        <label for="message">Message:</label>
-                        <textarea id="message" name="message" required></textarea>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" required></textarea>
+                        </div>
                         
-                        <button type="submit" class="cta-button">Send Message</button>
+                        <button type="submit" class="submit-btn">Send Message</button>
                     </form>
                 </div>
                 
                 <div class="contact-info">
                     <h3>Contact Information</h3>
-                    <p><strong>Address:</strong> 123 Inventory Street, Warehouse District, City, State 12345</p>
-                    <p><strong>Phone:</strong> (555) 123-4567</p>
-                    <p><strong>Email:</strong> info@inventorymanagerpro.com</p>
-                    <p><strong>Business Hours:</strong> Monday - Friday: 9am - 5pm</p>
+                    <p><strong>Phone:</strong> (4782297878) 123-4567</p>
+                    <p><strong>Email:</strong> davidmadison95@yahoo.com</p>
+                    <p><strong>Business Hours:</strong> Monday - Friday: 8am - 5pm</p>
                     
-                    <h3>Follow Us</h3>
+                    <h3>Connect With Us</h3>
                     <div class="social-links">
-                        <a href="#" target="_blank">Facebook</a>
-                        <a href="#" target="_blank">Twitter</a>
-                        <a href="#" target="_blank">LinkedIn</a>
-                        <a href="#" target="_blank">Instagram</a>
+                        <a href="www.linkedin.com/in/davidmadison95" target="_blank">LinkedIn</a>
                     </div>
                 </div>
             </div>
