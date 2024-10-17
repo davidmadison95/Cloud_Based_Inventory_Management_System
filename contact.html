@@ -3,102 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us - Inventory Manager Pro</title>
+    <title>Contact - Inventory Manager Pro</title>
     <link rel="stylesheet" href="styles.css">
-    <style>
-        /* Styles specific to the contact page */
-        .contact-container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 2rem;
-        }
-        .contact-form {
-            background-color: #f9f9f9;
-            border-radius: 8px;
-            padding: 2rem;
-            margin-bottom: 2rem;
-        }
-        .form-group {
-            margin-bottom: 1rem;
-        }
-        .form-group label {
-            display: block;
-            margin-bottom: 0.5rem;
-        }
-        .form-group input,
-        .form-group textarea {
-            width: 100%;
-            padding: 0.5rem;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-        }
-        .submit-btn {
-            background-color: #4CAF50;
-            color: white;
-            padding: 0.75rem 1.5rem;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-        }
-        .contact-info {
-            background-color: white;
-            border-radius: 8px;
-            padding: 2rem;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-    </style>
 </head>
 <body>
     <header>
-        <div class="container">
-            <h1>Inventory Manager Pro</h1>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="features.html">Features</a></li>
-                    <li><a href="benefits.html">Benefits</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="contact.html" class="active">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="features.html">Features</a></li>
+                <li><a href="benefits.html">Benefits</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
     <main>
-        <div class="contact-container">
-            <h2>Contact Us</h2>
-            <div class="contact-form">
-                <form action="#" method="POST">
-                    <div class="form-group">
-                        <label for="name">Name:</label>
-                        <input type="text" id="name" name="name" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email:</label>
-                        <input type="email" id="email" name="email" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Message:</label>
-                        <textarea id="message" name="message" rows="4" required></textarea>
-                    </div>
-                    <button type="submit" class="submit-btn">Send Message</button>
-                </form>
-            </div>
-            <div class="contact-info">
-                <h3>Contact Information</h3>
-                <p>Email: info@inventorymanagerpro.com</p>
-                <p>Phone: (555) 123-4567</p>
-                <p>Address: 123 Tech Street, Innovation City, ST 12345</p>
-                <h3>Connect with the Developer</h3>
-                <p>LinkedIn: <a href="https://www.linkedin.com/in/davidmadison95" target="_blank">David Madison</a></p>
-            </div>
-        </div>
+        <h1>Contact Us</h1>
+        <form action="#" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+
+        <h2>Connect with the Developer</h2>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/davidmadison95" target="_blank">David Madison</a></p>
     </main>
 
     <footer>
-        <div class="container">
-            <p>&copy; 2024 Inventory Manager Pro. All rights reserved.</p>
-        </div>
+        <p>&copy; 2024 Inventory Manager Pro. All rights reserved.</p>
     </footer>
 </body>
 </html>
