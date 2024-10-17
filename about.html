@@ -2,40 +2,75 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="About the Air Jordan brand history website and its author">
-    <meta name="keywords" content="Air Jordan, Nike, Michael Jordan, sneaker history, David Madison">
-    <meta name="author" content="David Madison">
-    <title>About - The History of Air Jordan Brand</title>
-    <link rel="stylesheet" type="text/css" href="MadisonDavidStylesheet.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Features - Inventory Manager Pro</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.js"></script>
 </head>
-<body>
-    <!-- Header Section -->
-    <header>
-        <h1>About This Website</h1>
-        <!-- Navigation Menu -->
-        <nav>
-            <ul>
-                <li><a href="MadisonDavidHomepage.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="table.html">Comparison Table</a></li>
-                <li><a href="form.html">Feedback Form</a></li>
-            </ul>
-        </nav>
+<body class="bg-gray-100 font-sans flex flex-col min-h-screen">
+    <header class="bg-blue-600 text-white p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-bold">Inventory Manager Pro</h1>
+            <nav>
+                <ul class="flex space-x-4">
+                    <li><a href="index.html" class="hover:underline">Home</a></li>
+                    <li><a href="features.html" class="hover:underline font-semibold">Features</a></li>
+                    <li><a href="benefits.html" class="hover:underline">Benefits</a></li>
+                    <li><a href="contact.html" class="hover:underline">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
-    <!-- Main Content Section -->
-    <div class="content">
-        <h2>Purpose</h2>
-        <p>Whether you're a sneakerhead, a basketball fan, or someone passionate about fashion, we aim to deliver in-depth insights and exclusive content on one of the most iconic footwear lines ever created. Dive into the stories behind the designs, the influence on global culture, and the enduring legacy of Air Jordan in sports and streetwear.</p>
-        <h2>About the Author</h2>
-        <p>My name is David Madison, and I'm a lifelong basketball fan and dedicated sneaker collector. Growing up in Warner Robins, Georgia, I've followed the Air Jordan brand since my teenage years, witnessing how these iconic shoes have evolved from essential sports gear to symbols of cultural influence. With a background in web development and an eye for design, I've combined my love for sneakers and technology to bring this website to life, sharing my passion for the Air Jordan legacy with fellow enthusiasts.</p>
-        <h3 class="centered-heading">My Involvement in Sneaker Culture</h3>
-        <p>As an active member of the sneaker community, I participate in local sneaker conventions and organize meetups for fellow enthusiasts in my area. I believe that sneakers, especially Air Jordans, have the power to bring people together and create lasting connections.</p>
-        <h3 class="centered-heading">Commitment to Education</h3>
-        <p>Beyond my passion for sneakers, I am deeply committed to education and youth development. I volunteer at local schools, where I teach students about the intersection of sports, fashion, and business through the lens of sneaker culture. This website is an extension of that mission, designed to inform and inspire the next generation of sneaker enthusiasts, helping them understand not just the style, but the impact and opportunities within the world of sneakers.</p>
-    </div>
-    <!-- Footer Section -->
-    <footer>
-        <p class="small-footer">&copy; 2024 David Madison - Air Jordan Brand History</p>
+
+    <main class="container mx-auto mt-8 p-4 flex-grow">
+        <h2 class="text-3xl font-semibold mb-6">Key Features</h2>
+        <div class="grid md:grid-cols-2 gap-6">
+            <div class="bg-white p-6 rounded shadow hover:shadow-lg transition duration-300">
+                <h3 class="text-xl font-semibold mb-3 text-blue-600">Real-time Tracking</h3>
+                <p class="text-gray-700">Monitor your inventory, orders, and shipments in real-time, ensuring you always have up-to-date information. Our system provides instant updates, allowing you to make informed decisions quickly.</p>
+                <ul class="mt-4 list-disc list-inside text-gray-600">
+                    <li>Live inventory count updates</li>
+                    <li>Real-time order status tracking</li>
+                    <li>Instant shipment location updates</li>
+                </ul>
+            </div>
+            <div class="bg-white p-6 rounded shadow hover:shadow-lg transition duration-300">
+                <h3 class="text-xl font-semibold mb-3 text-blue-600">User Authentication</h3>
+                <p class="text-gray-700">Secure access to your inventory data with robust user authentication systems. Control who has access to sensitive information and maintain data integrity with role-based permissions.</p>
+                <ul class="mt-4 list-disc list-inside text-gray-600">
+                    <li>Multi-factor authentication</li>
+                    <li>Role-based access control</li>
+                    <li>Audit logs for all user actions</li>
+                </ul>
+            </div>
+            <div class="bg-white p-6 rounded shadow hover:shadow-lg transition duration-300">
+                <h3 class="text-xl font-semibold mb-3 text-blue-600">Automated Reporting</h3>
+                <p class="text-gray-700">Generate comprehensive reports automatically, reducing manual tracking by 20%. Get insights into your inventory trends, sales patterns, and more with just a few clicks.</p>
+                <ul class="mt-4 list-disc list-inside text-gray-600">
+                    <li>Customizable report templates</li>
+                    <li>Scheduled report generation</li>
+                    <li>Export options (PDF, CSV, Excel)</li>
+                </ul>
+            </div>
+            <div class="bg-white p-6 rounded shadow hover:shadow-lg transition duration-300">
+                <h3 class="text-xl font-semibold mb-3 text-blue-600">Low Stock Alerts</h3>
+                <p class="text-gray-700">Receive timely alerts for low stock levels, preventing stockouts and optimizing your inventory. Set custom thresholds and get notified via email or SMS when it's time to reorder.</p>
+                <ul class="mt-4 list-disc list-inside text-gray-600">
+                    <li>Customizable alert thresholds</li>
+                    <li>Multi-channel notifications</li>
+                    <li>Automated reorder suggestions</li>
+                </ul>
+            </div>
+        </div>
+        <div class="mt-12 text-center">
+            <a href="contact.html" class="bg-blue-500 text-white px-6 py-3 rounded-lg hover:bg-blue-600 transition duration-300 inline-block font-semibold">Get Started Today</a>
+        </div>
+    </main>
+
+    <footer class="bg-gray-200 mt-12 p-4">
+        <div class="container mx-auto text-center text-gray-600">
+            <p>&copy; 2024 Inventory Manager Pro. All rights reserved.</p>
+            <p class="mt-2">Powered by Python, MySQL, and AWS</p>
+        </div>
     </footer>
 </body>
 </html>
