@@ -4,58 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us - WebCraft Pro</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <style>
-        /* Additional styles for the new contact page layout */
-        .contact-container {
-            display: flex;
-            height: calc(100vh - 80px); /* Adjust based on your header/footer height */
-        }
-        .contact-form-section {
-            flex: 1;
-            padding: 40px;
-            overflow-y: auto;
-        }
-        .contact-map-section {
-            flex: 1;
-            background-color: #e0e0e0; /* Placeholder for map */
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        .contact-info {
-            background-color: rgba(255, 255, 255, 0.9);
-            padding: 20px;
-            border-radius: 8px;
-            text-align: center;
-        }
-        .contact-form {
-            max-width: 100%;
-        }
-        .contact-form input,
-        .contact-form textarea {
-            width: 100%;
-            margin-bottom: 15px;
-            padding: 10px;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-        }
-        .contact-form textarea {
-            height: 150px;
-            resize: vertical;
-        }
-        @media (max-width: 768px) {
-            .contact-container {
-                flex-direction: column;
-                height: auto;
-            }
-            .contact-map-section {
-                height: 300px;
-            }
-        }
-    </style>
 </head>
 <body>
     <nav id="side-nav">
@@ -70,29 +20,17 @@
     </nav>
 
     <main>
-        <div class="contact-container">
-            <section class="contact-form-section">
-                <h1>Contact Us</h1>
-                <p>Ready to take your business online? Get in touch with us today!</p>
-                <form class="contact-form">
-                    <input type="text" placeholder="Your Name" required>
-                    <input type="email" placeholder="Your Email" required>
-                    <input type="text" placeholder="Your Business Name">
-                    <textarea placeholder="Tell us about your website needs" required></textarea>
-                    <button type="submit" class="cta-button">Send Message</button>
-                </form>
-            </section>
-            <section class="contact-map-section">
-                <!-- Replace this div with an actual map embed code -->
-                <div style="width: 100%; height: 100%; background-color: #e0e0e0;"></div>
-                <div class="contact-info">
-                    <h2>Our Location</h2>
-                    <p>123 Web Street, Digital City, 12345</p>
-                    <p>Email: info@webcraftpro.com</p>
-                    <p>Phone: (123) 456-7890</p>
-                </div>
-            </section>
-        </div>
+        <section id="contact">
+            <h1>Contact Us</h1>
+            <p>Ready to take your business online? Get in touch with us today!</p>
+            <form>
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <input type="text" placeholder="Your Business Name">
+                <textarea placeholder="Tell us about your website needs" required></textarea>
+                <button type="submit" class="cta-button">Send Message</button>
+            </form>
+        </section>
     </main>
 
     <footer>
