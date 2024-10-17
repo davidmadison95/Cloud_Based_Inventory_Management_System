@@ -179,4 +179,24 @@ p {
 
 /* Form Styles */
 form {
-    display:
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+}
+
+input, textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
