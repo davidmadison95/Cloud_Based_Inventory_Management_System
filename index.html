@@ -2,109 +2,91 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="A comprehensive overview of the history of the Air Jordan brand and its impact on sneaker culture.">
-    <meta name="keywords" content="Air Jordan, Nike, Michael Jordan, sneaker history, basketball shoes">
-    <meta name="author" content="David Madison">
-    <title>The History of Air Jordan Brand</title>
-    <link rel="stylesheet" type="text/css" href="MadisonDavidStylesheet.css">
-    <script>
-        // Function to display current date and time
-        function showDateTime() {
-            var now = new Date();
-            var dateTimeString = now.toLocaleDateString() + " " + now.toLocaleTimeString();
-            document.getElementById("dateTime").innerHTML = dateTimeString;
-        }
-
-        // Functions to change heading color
-        function changeHeadingColor() {
-            document.querySelector('header h1').style.color = 'red';
-        }
-
-        function resetHeadingColor() {
-            document.querySelector('header h1').style.color = '#333';
-        }
-
-        // Functions for secret message
-        function showSecretMessage() {
-            document.getElementById("secretBox").innerText = "Thank you";
-        }
-
-        function hideSecretMessage() {
-            document.getElementById("secretBox").innerText = "Mouse Over Me";
-        }
-    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cloud-Based Inventory Management System</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.js"></script>
 </head>
-<body>
-    <!-- Header Section -->
-    <header>
-        <h1 onmouseover="changeHeadingColor()" onmouseout="resetHeadingColor()">The History of Air Jordan</h1>
-        <!-- Navigation Menu -->
-        <nav>
-            <ul>
-                <li><a href="MadisonDavidHomepage.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="table.html">Comparison Table</a></li>
-                <li><a href="form.html">Feedback Form</a></li>
-            </ul>
-        </nav>
+<body class="bg-gray-100 font-sans flex flex-col min-h-screen">
+    <header class="bg-blue-600 text-white p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-bold">Inventory Manager Pro</h1>
+            <nav>
+                <ul class="flex space-x-4">
+                    <li><a href="#" class="hover:underline">Home</a></li>
+                    <li><a href="#features" class="hover:underline">Features</a></li>
+                    <li><a href="#benefits" class="hover:underline">Benefits</a></li>
+                    <li><a href="#contact" class="hover:underline">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
-    
-    <!-- Fixed boxes in the top right corner -->
-    <div class="top-right-boxes">
-        <div class="datetime-container">
-            <button onclick="showDateTime()">Show Date and Time</button>
-            <div id="dateTime"></div>
-        </div>
-        <div id="secretBox" onmouseover="showSecretMessage()" onmouseout="hideSecretMessage()">
-            Mouse Over Me
-        </div>
-    </div>
 
-    <!-- Main Content Section -->
-    <div class="content">
-        <h2>Welcome</h2>
-        
-        <!-- Video Section -->
-        <div class="video-container">
-            <video controls>
-                <source src="Video_Script.MOV" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
+    <main class="container mx-auto mt-8 p-4 flex-grow">
+        <section class="mb-12">
+            <h2 class="text-3xl font-semibold mb-4">Welcome to Inventory Manager Pro</h2>
+            <p class="text-gray-700 mb-4">
+                Inventory Manager Pro is a cutting-edge cloud-based inventory management system designed to streamline your business operations. Using Python, MySQL, and AWS, our system provides real-time tracking of products, orders, and shipments, improving stock management efficiency by 30%.
+            </p>
+            <a href="#features" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition duration-300">Explore Features</a>
+        </section>
+
+        <section id="features" class="mb-12">
+            <h2 class="text-2xl font-semibold mb-4">Key Features</h2>
+            <div class="grid md:grid-cols-2 gap-4">
+                <div class="bg-white p-4 rounded shadow">
+                    <h3 class="font-semibold mb-2">Real-time Tracking</h3>
+                    <p>Monitor your inventory, orders, and shipments in real-time, ensuring you always have up-to-date information.</p>
+                </div>
+                <div class="bg-white p-4 rounded shadow">
+                    <h3 class="font-semibold mb-2">User Authentication</h3>
+                    <p>Secure access to your inventory data with robust user authentication systems.</p>
+                </div>
+                <div class="bg-white p-4 rounded shadow">
+                    <h3 class="font-semibold mb-2">Automated Reporting</h3>
+                    <p>Generate comprehensive reports automatically, reducing manual tracking by 20%.</p>
+                </div>
+                <div class="bg-white p-4 rounded shadow">
+                    <h3 class="font-semibold mb-2">Low Stock Alerts</h3>
+                    <p>Receive timely alerts for low stock levels, preventing stockouts and optimizing your inventory.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="benefits" class="mb-12">
+            <h2 class="text-2xl font-semibold mb-4">Benefits</h2>
+            <ul class="list-disc list-inside text-gray-700">
+                <li>Improved stock management efficiency by 30%</li>
+                <li>Reduced manual tracking by 20%</li>
+                <li>Prevention of stockouts through automated alerts</li>
+                <li>Enhanced decision-making with real-time data</li>
+                <li>Scalable solution that grows with your business</li>
+            </ul>
+        </section>
+
+        <section id="contact" class="mb-12">
+            <h2 class="text-2xl font-semibold mb-4">Contact Us</h2>
+            <form class="bg-white p-6 rounded shadow">
+                <div class="mb-4">
+                    <label for="name" class="block text-gray-700 mb-2">Name</label>
+                    <input type="text" id="name" name="name" class="w-full px-3 py-2 border rounded" required>
+                </div>
+                <div class="mb-4">
+                    <label for="email" class="block text-gray-700 mb-2">Email</label>
+                    <input type="email" id="email" name="email" class="w-full px-3 py-2 border rounded" required>
+                </div>
+                <div class="mb-4">
+                    <label for="message" class="block text-gray-700 mb-2">Message</label>
+                    <textarea id="message" name="message" rows="4" class="w-full px-3 py-2 border rounded" required></textarea>
+                </div>
+                <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition duration-300">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="bg-gray-200 mt-auto p-4">
+        <div class="container mx-auto text-center text-gray-600">
+            &copy; 2024 Inventory Manager Pro. All rights reserved.
         </div>
-
-        <!-- Audio Section -->
-        <audio controls>
-            <source src="Audio_Script.mp3" type="audio/mpeg">
-            Your browser does not support the audio element.
-        </audio>
-
-        <h2>The Beginning: Air Jordan 1</h2>
-        <p>The Air Jordan brand, launched in 1984 in collaboration with <span class="boldtext">NBA legend Michael Jordan</span>, has become one of the most <span class="italictext">iconic brands</span> in the world of sneakers and streetwear. From its early beginnings as a <span class="boldtext italictext">revolutionary basketball shoe</span> to its influence on global fashion, the Air Jordan brand has a storied history.</p>
-        
-        <img src="Air_Jordan_Chicago.jpg" alt="Air Jordan 1 Chicago" class="homepage-image">
-        
-        <h2>Rise of the Air Jordan Legacy</h2>
-        <p>In 1984, Nike signed rookie Michael Jordan to an endorsement deal, leading to the creation of the Air Jordan 1. Despite being banned by the NBA for not meeting uniform regulations, the Air Jordan 1 became a cultural phenomenon and laid the foundation for the brand's future success.</p>
-        
-        <h2>Modern Era and Global Impact</h2>
-        <p>One of the key factors in the brand's continued success is its strategic partnerships with influential designers and brands. Collaborations with high-end fashion labels like Dior, Off-White (designed by the late Virgil Abloh), and Travis Scott have created limited-edition Air Jordans that merge luxury fashion with streetwear aesthetics. These collaborations have not only elevated the Air Jordan brand within the world of high fashion but also created immense demand from sneaker collectors, often driving resale prices into the thousands.</p>
-        <img src="Air_Jordan_OffWhite.jpg" alt="Air Jordan 1 OffWhite Chicago" class="homepage-image">
-		
-		<h3>Global Reach and Sneaker Culture</h3>
-        <p>The rise of the Air Jordan brand has gone hand in hand with the explosion of global sneaker culture. What started in the United States as a basketball shoe is now worn across the world, from the streets of New York to Tokyo and Paris. In countries like China, the Air Jordan brand has a massive following, with sneaker conventions, online resale platforms, and exclusive regional releases helping to fuel demand. This global appeal has made Air Jordans a status symbol not only in athletic circles but also in fashion and lifestyle contexts. The shoes have become a way to express individuality, cultural affiliation, and style.</p>
-		<img src="Air_Jordan_Fashion.webp" alt="Air Jordan 1 Fashion" class="homepage-image">
-    </div>
-    
-    <!-- Button Container with Three Buttons -->
-    <div class="button-container">
-        <a href="https://www.footlocker.com/en/history-of-air-jordan.html" class="btn">Complete History Of Air Jordan</a>
-        <a href="https://www.nike.com/jordan/air-jordan-collection" class="btn btn-blue">Shop Air Jordan Collection</a>
-        <a href="https://www.nike.com/jordan/purpose" class="btn btn-green">Join Air Jordan Community</a>
-    </div>
-    
-    <!-- Footer Section -->
-    <footer>
-        <p class="small-footer">&copy; 2024 David Madison - Air Jordan Brand History</p>
     </footer>
 </body>
 </html>
