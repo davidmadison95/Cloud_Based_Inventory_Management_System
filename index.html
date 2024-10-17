@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="A comprehensive overview of the history of the Air Jordan brand and its impact on sneaker culture.">
+    <meta name="keywords" content="Air Jordan, Nike, Michael Jordan, sneaker history, basketball shoes">
+    <meta name="author" content="David Madison">
+    <title>The History of Air Jordan Brand</title>
+    <link rel="stylesheet" type="text/css" href="MadisonDavidStylesheet.css">
+    <script>
+        // Function to display current date and time
+        function showDateTime() {
+            var now = new Date();
+            var dateTimeString = now.toLocaleDateString() + " " + now.toLocaleTimeString();
+            document.getElementById("dateTime").innerHTML = dateTimeString;
+        }
+
+        // Functions to change heading color
+        function changeHeadingColor() {
+            document.querySelector('header h1').style.color = 'red';
+        }
+
+        function resetHeadingColor() {
+            document.querySelector('header h1').style.color = '#333';
+        }
+
+        // Functions for secret message
+        function showSecretMessage() {
+            document.getElementById("secretBox").innerText = "Thank you";
+        }
+
+        function hideSecretMessage() {
+            document.getElementById("secretBox").innerText = "Mouse Over Me";
+        }
+    </script>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1 onmouseover="changeHeadingColor()" onmouseout="resetHeadingColor()">The History of Air Jordan</h1>
+        <!-- Navigation Menu -->
+        <nav>
+            <ul>
+                <li><a href="MadisonDavidHomepage.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="table.html">Comparison Table</a></li>
+                <li><a href="form.html">Feedback Form</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <!-- Fixed boxes in the top right corner -->
+    <div class="top-right-boxes">
+        <div class="datetime-container">
+            <button onclick="showDateTime()">Show Date and Time</button>
+            <div id="dateTime"></div>
+        </div>
+        <div id="secretBox" onmouseover="showSecretMessage()" onmouseout="hideSecretMessage()">
+            Mouse Over Me
+        </div>
+    </div>
+
+    <!-- Main Content Section -->
+    <div class="content">
+        <h2>Welcome</h2>
+        
+        <!-- Video Section -->
+        <div class="video-container">
+            <video controls>
+                <source src="Video_Script.MOV" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+
+        <!-- Audio Section -->
+        <audio controls>
+            <source src="Audio_Script.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+
+        <h2>The Beginning: Air Jordan 1</h2>
+        <p>The Air Jordan brand, launched in 1984 in collaboration with <span class="boldtext">NBA legend Michael Jordan</span>, has become one of the most <span class="italictext">iconic brands</span> in the world of sneakers and streetwear. From its early beginnings as a <span class="boldtext italictext">revolutionary basketball shoe</span> to its influence on global fashion, the Air Jordan brand has a storied history.</p>
+        
+        <img src="Air_Jordan_Chicago.jpg" alt="Air Jordan 1 Chicago" class="homepage-image">
+        
+        <h2>Rise of the Air Jordan Legacy</h2>
+        <p>In 1984, Nike signed rookie Michael Jordan to an endorsement deal, leading to the creation of the Air Jordan 1. Despite being banned by the NBA for not meeting uniform regulations, the Air Jordan 1 became a cultural phenomenon and laid the foundation for the brand's future success.</p>
+        
+        <h2>Modern Era and Global Impact</h2>
+        <p>One of the key factors in the brand's continued success is its strategic partnerships with influential designers and brands. Collaborations with high-end fashion labels like Dior, Off-White (designed by the late Virgil Abloh), and Travis Scott have created limited-edition Air Jordans that merge luxury fashion with streetwear aesthetics. These collaborations have not only elevated the Air Jordan brand within the world of high fashion but also created immense demand from sneaker collectors, often driving resale prices into the thousands.</p>
+        <img src="Air_Jordan_OffWhite.jpg" alt="Air Jordan 1 OffWhite Chicago" class="homepage-image">
+		
+		<h3>Global Reach and Sneaker Culture</h3>
+        <p>The rise of the Air Jordan brand has gone hand in hand with the explosion of global sneaker culture. What started in the United States as a basketball shoe is now worn across the world, from the streets of New York to Tokyo and Paris. In countries like China, the Air Jordan brand has a massive following, with sneaker conventions, online resale platforms, and exclusive regional releases helping to fuel demand. This global appeal has made Air Jordans a status symbol not only in athletic circles but also in fashion and lifestyle contexts. The shoes have become a way to express individuality, cultural affiliation, and style.</p>
+		<img src="Air_Jordan_Fashion.webp" alt="Air Jordan 1 Fashion" class="homepage-image">
+    </div>
+    
+    <!-- Button Container with Three Buttons -->
+    <div class="button-container">
+        <a href="https://www.footlocker.com/en/history-of-air-jordan.html" class="btn">Complete History Of Air Jordan</a>
+        <a href="https://www.nike.com/jordan/air-jordan-collection" class="btn btn-blue">Shop Air Jordan Collection</a>
+        <a href="https://www.nike.com/jordan/purpose" class="btn btn-green">Join Air Jordan Community</a>
+    </div>
+    
+    <!-- Footer Section -->
+    <footer>
+        <p class="small-footer">&copy; 2024 David Madison - Air Jordan Brand History</p>
+    </footer>
+</body>
+</html>
