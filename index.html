@@ -3,90 +3,223 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cloud-Based Inventory Management System</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.js"></script>
+    <title>Inventory Manager Pro - Smart Inventory Solutions</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Additional styles for tabs */
+        .tab-container {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 2rem;
+        }
+        .tab {
+            padding: 1rem 2rem;
+            background-color: #f0f0f0;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            font-weight: bold;
+            color: #4a4a4a;
+        }
+        .tab:hover, .tab.active {
+            background-color: #ff6b6b;
+            color: white;
+        }
+        .tab-content {
+            display: none;
+        }
+        .tab-content.active {
+            display: block;
+        }
+        #hero {
+            text-align: center;
+            padding: 4rem 0;
+            background: linear-gradient(45deg, #ff6b6b, #feca57);
+            color: white;
+            margin-bottom: 2rem;
+        }
+        #hero h2 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            color: white;
+        }
+        #hero p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto 2rem;
+        }
+    </style>
 </head>
-<body class="bg-gray-100 font-sans flex flex-col min-h-screen">
-    <header class="bg-blue-600 text-white p-4">
-        <div class="container mx-auto flex justify-between items-center">
-            <h1 class="text-2xl font-bold">Inventory Manager Pro</h1>
+<body>
+    <header>
+        <div class="container">
+            <h1>Inventory Manager Pro</h1>
             <nav>
-                <ul class="flex space-x-4">
-                    <li><a href="#" class="hover:underline">Home</a></li>
-                    <li><a href="#features" class="hover:underline">Features</a></li>
-                    <li><a href="#benefits" class="hover:underline">Benefits</a></li>
-                    <li><a href="#contact" class="hover:underline">Contact</a></li>
+                <ul>
+                    <li><a href="#home" class="tab" onclick="openTab(event, 'home')">Home</a></li>
+                    <li><a href="#features" class="tab" onclick="openTab(event, 'features')">Features</a></li>
+                    <li><a href="#benefits" class="tab" onclick="openTab(event, 'benefits')">Benefits</a></li>
+                    <li><a href="#contact" class="tab" onclick="openTab(event, 'contact')">Contact</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <main class="container mx-auto mt-8 p-4 flex-grow">
-        <section class="mb-12">
-            <h2 class="text-3xl font-semibold mb-4">Welcome to Inventory Manager Pro</h2>
-            <p class="text-gray-700 mb-4">
-                Inventory Manager Pro is a cutting-edge cloud-based inventory management system designed to streamline your business operations. Using Python, MySQL, and AWS, our system provides real-time tracking of products, orders, and shipments, improving stock management efficiency by 30%.
-            </p>
-            <a href="#features" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition duration-300">Explore Features</a>
-        </section>
-
-        <section id="features" class="mb-12">
-            <h2 class="text-2xl font-semibold mb-4">Key Features</h2>
-            <div class="grid md:grid-cols-2 gap-4">
-                <div class="bg-white p-4 rounded shadow">
-                    <h3 class="font-semibold mb-2">Real-time Tracking</h3>
-                    <p>Monitor your inventory, orders, and shipments in real-time, ensuring you always have up-to-date information.</p>
-                </div>
-                <div class="bg-white p-4 rounded shadow">
-                    <h3 class="font-semibold mb-2">User Authentication</h3>
-                    <p>Secure access to your inventory data with robust user authentication systems.</p>
-                </div>
-                <div class="bg-white p-4 rounded shadow">
-                    <h3 class="font-semibold mb-2">Automated Reporting</h3>
-                    <p>Generate comprehensive reports automatically, reducing manual tracking by 20%.</p>
-                </div>
-                <div class="bg-white p-4 rounded shadow">
-                    <h3 class="font-semibold mb-2">Low Stock Alerts</h3>
-                    <p>Receive timely alerts for low stock levels, preventing stockouts and optimizing your inventory.</p>
-                </div>
+    <main>
+        <section id="hero">
+            <div class="container">
+                <h2>Transform Your Inventory Management</h2>
+                <p>Streamline operations, reduce costs, and boost efficiency with our cloud-based solution.</p>
+                <a href="#contact" class="cta-button" onclick="openTab(event, 'contact')">Get Started Today</a>
             </div>
         </section>
 
-        <section id="benefits" class="mb-12">
-            <h2 class="text-2xl font-semibold mb-4">Benefits</h2>
-            <ul class="list-disc list-inside text-gray-700">
-                <li>Improved stock management efficiency by 30%</li>
-                <li>Reduced manual tracking by 20%</li>
-                <li>Prevention of stockouts through automated alerts</li>
-                <li>Enhanced decision-making with real-time data</li>
-                <li>Scalable solution that grows with your business</li>
-            </ul>
-        </section>
+        <div class="container">
+            <div id="home" class="tab-content active">
+                <h2>Welcome to Inventory Manager Pro</h2>
+                <p>Discover how our cutting-edge inventory management system can revolutionize your business operations. With real-time tracking, automated reporting, and intelligent forecasting, you'll never look at inventory the same way again.</p>
+                <div class="grid">
+                    <div class="card">
+                        <h3>Real-time Tracking</h3>
+                        <p>Monitor your inventory levels, orders, and shipments in real-time, ensuring you always have the most up-to-date information at your fingertips.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Smart Analytics</h3>
+                        <p>Harness the power of data with our advanced analytics tools, helping you make informed decisions and optimize your inventory management strategies.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Cloud-Based Solution</h3>
+                        <p>Access your inventory data from anywhere, at any time. Our cloud-based system ensures you're always connected to your business, whether you're in the office or on the go.</p>
+                    </div>
+                </div>
+            </div>
 
-        <section id="contact" class="mb-12">
-            <h2 class="text-2xl font-semibold mb-4">Contact Us</h2>
-            <form class="bg-white p-6 rounded shadow">
-                <div class="mb-4">
-                    <label for="name" class="block text-gray-700 mb-2">Name</label>
-                    <input type="text" id="name" name="name" class="w-full px-3 py-2 border rounded" required>
+            <div id="features" class="tab-content">
+                <h2>Powerful Features</h2>
+                <div class="grid">
+                    <div class="card">
+                        <h3>Real-time Tracking</h3>
+                        <p>Monitor inventory, orders, and shipments in real-time for up-to-date information.</p>
+                        <ul>
+                            <li>Live inventory updates</li>
+                            <li>Order status tracking</li>
+                            <li>Shipment location monitoring</li>
+                        </ul>
+                    </div>
+                    <div class="card">
+                        <h3>Automated Reporting</h3>
+                        <p>Generate comprehensive reports automatically, reducing manual work by 20%.</p>
+                        <ul>
+                            <li>Customizable report templates</li>
+                            <li>Scheduled report generation</li>
+                            <li>Export in multiple formats</li>
+                        </ul>
+                    </div>
+                    <div class="card">
+                        <h3>Intelligent Forecasting</h3>
+                        <p>Use AI-powered predictions to optimize your inventory levels and reduce costs.</p>
+                        <ul>
+                            <li>Demand prediction</li>
+                            <li>Seasonal trend analysis</li>
+                            <li>Automated reorder suggestions</li>
+                        </ul>
+                    </div>
+                    <div class="card">
+                        <h3>Multi-channel Integration</h3>
+                        <p>Seamlessly integrate with your existing e-commerce platforms and marketplaces.</p>
+                        <ul>
+                            <li>Support for major e-commerce platforms</li>
+                            <li>Real-time inventory syncing</li>
+                            <li>Automated order processing</li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="mb-4">
-                    <label for="email" class="block text-gray-700 mb-2">Email</label>
-                    <input type="email" id="email" name="email" class="w-full px-3 py-2 border rounded" required>
+            </div>
+
+            <div id="benefits" class="tab-content">
+                <h2>Key Benefits</h2>
+                <div class="grid">
+                    <div class="card">
+                        <h3>Increased Efficiency</h3>
+                        <p>Streamline your operations and save time with automated processes.</p>
+                        <ul>
+                            <li>Reduce manual data entry by 50%</li>
+                            <li>Minimize human errors</li>
+                            <li>Free up staff for strategic tasks</li>
+                        </ul>
+                    </div>
+                    <div class="card">
+                        <h3>Cost Reduction</h3>
+                        <p>Optimize inventory levels and reduce unnecessary expenses.</p>
+                        <ul>
+                            <li>Lower carrying costs</li>
+                            <li>Prevent overstocking</li>
+                            <li>Reduce stockouts by 30%</li>
+                        </ul>
+                    </div>
+                    <div class="card">
+                        <h3>Improved Customer Satisfaction</h3>
+                        <p>Enhance your customer service with accurate and timely order fulfillment.</p>
+                        <ul>
+                            <li>Faster order processing</li>
+                            <li>Accurate delivery estimates</li>
+                            <li>Reduced out-of-stock situations</li>
+                        </ul>
+                    </div>
+                    <div class="card">
+                        <h3>Data-Driven Decision Making</h3>
+                        <p>Make informed choices based on real-time data and advanced analytics.</p>
+                        <ul>
+                            <li>Identify top-selling products</li>
+                            <li>Optimize pricing strategies</li>
+                            <li>Improve cash flow management</li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="mb-4">
-                    <label for="message" class="block text-gray-700 mb-2">Message</label>
-                    <textarea id="message" name="message" rows="4" class="w-full px-3 py-2 border rounded" required></textarea>
-                </div>
-                <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition duration-300">Send Message</button>
-            </form>
-        </section>
+            </div>
+
+            <div id="contact" class="tab-content">
+                <h2>Get in Touch</h2>
+                <p>Ready to transform your inventory management? Contact us today for a free consultation and demo.</p>
+                <form class="card">
+                    <div>
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div>
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+                    <button type="submit" class="cta-button">Send Message</button>
+                </form>
+            </div>
+        </div>
     </main>
 
-    <footer class="bg-gray-200 mt-auto p-4">
-        <div class="container mx-auto text-center text-gray-600">
-            &copy; 2024 Inventory Manager Pro. All rights reserved.
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Inventory Manager Pro. All rights reserved.</p>
         </div>
     </footer>
+
+    <script>
+        function openTab(evt, tabName) {
+            var i, tabContent, tabLinks;
+            tabContent = document.getElementsByClassName("tab-content");
+            for (i = 0; i < tabContent.length; i++) {
+                tabContent[i].style.display = "none";
+            }
+            tabLinks = document.getElementsByClassName("tab");
+            for (i = 0; i < tabLinks.length; i++) {
+                tabLinks[i].className = tabLinks[i].className.replace(" active", "");
+            }
+            document.getElementById(tabName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+    </script>
 </body>
 </html>
