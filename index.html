@@ -6,7 +6,6 @@
     <title>Inventory Manager Pro - Smart Inventory Solutions</title>
     <link rel="stylesheet" href="styles.css">
     <style>
-        /* Additional styles for the homepage */
         .hero {
             background: linear-gradient(to right, #4CAF50, #45a049);
             color: white;
@@ -35,66 +34,6 @@
         .cta-button:hover {
             background-color: #F4511E;
         }
-        .section {
-            padding: 4rem 0;
-        }
-        .section-title {
-            text-align: center;
-            margin-bottom: 2rem;
-        }
-        .features-grid, .benefits-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 2rem;
-        }
-        .feature-card, .benefit-card {
-            background-color: #f9f9f9;
-            border-radius: 8px;
-            padding: 1.5rem;
-            text-align: center;
-            transition: transform 0.3s ease;
-        }
-        .feature-card:hover, .benefit-card:hover {
-            transform: translateY(-5px);
-        }
-        .about-grid {
-            display: grid;
-            grid-template-columns: 1fr 2fr;
-            gap: 2rem;
-        }
-        .developer-profile {
-            text-align: center;
-        }
-        .developer-profile img {
-            width: 200px;
-            height: 200px;
-            border-radius: 50%;
-            object-fit: cover;
-            margin-bottom: 1rem;
-        }
-        .contact-form {
-            max-width: 600px;
-            margin: 0 auto;
-        }
-        .form-group {
-            margin-bottom: 1rem;
-        }
-        .form-group label {
-            display: block;
-            margin-bottom: 0.5rem;
-        }
-        .form-group input,
-        .form-group textarea {
-            width: 100%;
-            padding: 0.5rem;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-        }
-        @media (max-width: 768px) {
-            .about-grid {
-                grid-template-columns: 1fr;
-            }
-        }
     </style>
 </head>
 <body>
@@ -103,120 +42,35 @@
             <h1>Inventory Manager Pro</h1>
             <nav>
                 <ul>
-                    <li><a href="#home" class="active">Home</a></li>
-                    <li><a href="#features">Features</a></li>
-                    <li><a href="#benefits">Benefits</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="features.html">Features</a></li>
+                    <li><a href="benefits.html">Benefits</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
     <main>
-        <section id="home" class="hero">
+        <section class="hero">
             <div class="container">
                 <h2>Transform Your Inventory Management</h2>
                 <p>Streamline operations, reduce costs, and boost efficiency with our cloud-based solution.</p>
-                <a href="#contact" class="cta-button">Get Started Today</a>
+                <a href="contact.html" class="cta-button">Get Started Today</a>
             </div>
         </section>
 
-        <section id="features" class="section">
-            <div class="container">
-                <h2 class="section-title">Powerful Features</h2>
-                <div class="features-grid">
-                    <div class="feature-card">
-                        <h3>Real-time Tracking</h3>
-                        <p>Monitor inventory, orders, and shipments in real-time with 99.9% accuracy.</p>
-                    </div>
-                    <div class="feature-card">
-                        <h3>Advanced Analytics</h3>
-                        <p>Leverage AI and machine learning to predict demand and optimize inventory levels.</p>
-                    </div>
-                    <div class="feature-card">
-                        <h3>Multi-channel Integration</h3>
-                        <p>Seamlessly connect your inventory across 50+ sales channels and platforms.</p>
-                    </div>
-                    <div class="feature-card">
-                        <h3>Automated Ordering</h3>
-                        <p>Streamline your supply chain with intelligent automation, cutting procurement time by 70%.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="benefits" class="section">
-            <div class="container">
-                <h2 class="section-title">Key Benefits</h2>
-                <div class="benefits-grid">
-                    <div class="benefit-card">
-                        <h3>Increased Efficiency</h3>
-                        <p>Improve stock management efficiency by 30% through streamlined operations.</p>
-                    </div>
-                    <div class="benefit-card">
-                        <h3>Cost Reduction</h3>
-                        <p>Reduce inventory holding costs by an average of 25% with optimized stock levels.</p>
-                    </div>
-                    <div class="benefit-card">
-                        <h3>Enhanced Customer Satisfaction</h3>
-                        <p>Boost customer satisfaction scores by 42% with improved order fulfillment.</p>
-                    </div>
-                    <div class="benefit-card">
-                        <h3>Data-Driven Decisions</h3>
-                        <p>Make informed decisions 3x faster with advanced analytics and reporting.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="about" class="section">
-            <div class="container">
-                <h2 class="section-title">About Us</h2>
-                <div class="about-grid">
-                    <div class="developer-profile">
-                        <img src="david_madison.jpg" alt="David Madison, Developer of Inventory Manager Pro">
-                        <h3>David Madison</h3>
-                        <p>Full Stack Developer</p>
-                        <p>B.S. in Information Technology (Expected May 2025)</p>
-                        <p>American Military University</p>
-                    </div>
-                    <div class="project-info">
-                        <p>Inventory Manager Pro is a cutting-edge, cloud-based inventory management system designed to meet the evolving needs of modern businesses. Developed by David Madison, a passionate Information Technology student with a focus on Full Stack Programming, our solution aims to revolutionize how businesses handle their inventory.</p>
-                        <p>With a strong academic background and practical experience in project management and data analysis, David brings a unique perspective to solving inventory challenges. His commitment to excellence, honed through academic achievements and leadership experiences, is reflected in every aspect of Inventory Manager Pro.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="contact" class="section">
-            <div class="container">
-                <h2 class="section-title">Get in Touch</h2>
-                <div class="contact-form">
-                    <form action="#" method="POST">
-                        <div class="form-group">
-                            <label for="name">Name:</label>
-                            <input type="text" id="name" name="name" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Email:</label>
-                            <input type="email" id="email" name="email" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="message">Message:</label>
-                            <textarea id="message" name="message" rows="4" required></textarea>
-                        </div>
-                        <button type="submit" class="cta-button">Send Message</button>
-                    </form>
-                </div>
-            </div>
+        <section class="container">
+            <h2>Welcome to Inventory Manager Pro</h2>
+            <p>Inventory Manager Pro is a cutting-edge, cloud-based inventory management system designed to meet the evolving needs of modern businesses. Our solution streamlines operations, reduces costs, and provides real-time insights for informed decision-making.</p>
+            <p>Explore our features, discover the benefits, and learn how Inventory Manager Pro can revolutionize your inventory management processes.</p>
         </section>
     </main>
 
     <footer>
         <div class="container">
             <p>&copy; 2024 Inventory Manager Pro. All rights reserved.</p>
-            <p>Connect with the developer: <a href="https://www.linkedin.com/in/davidmadison95" target="_blank">David Madison on LinkedIn</a></p>
         </div>
     </footer>
 </body>
