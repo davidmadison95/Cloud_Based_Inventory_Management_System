@@ -1,12 +1,12 @@
-/* Shared Styles for Inventory Manager Pro */
+/* Complete Styles for WebCraft Pro */
 
 :root {
-    --primary-color: #4CAF50;
-    --secondary-color: #2196F3;
-    --accent-color: #FFC107;
+    --primary-color: #3498db;
+    --secondary-color: #2ecc71;
+    --accent-color: #f39c12;
     --text-color: #333333;
-    --background-color: #F5F5F5;
-    --card-background: #FFFFFF;
+    --background-color: #f5f5f5;
+    --card-background: #ffffff;
 }
 
 * {
@@ -36,9 +36,10 @@ body {
 }
 
 .nav-logo {
-    font-size: 1.5em;
+    font-size: 1.8em;
     font-weight: bold;
     margin-bottom: 30px;
+    text-align: center;
 }
 
 #side-nav ul {
@@ -54,9 +55,13 @@ body {
     text-decoration: none;
     font-size: 1.1em;
     transition: color 0.3s ease;
+    display: block;
+    padding: 5px 10px;
+    border-radius: 5px;
 }
 
 #side-nav ul li a:hover, #side-nav ul li a.active {
+    background-color: rgba(255, 255, 255, 0.2);
     color: var(--accent-color);
 }
 
@@ -120,22 +125,42 @@ p {
     background-color: var(--accent-color);
 }
 
-/* List Styles */
-.benefits-list {
-    list-style-type: none;
-    padding-left: 20px;
+/* Portfolio Styles */
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
 }
 
-.benefits-list li {
-    margin-bottom: 10px;
-    position: relative;
+.portfolio-item {
+    background-color: var(--card-background);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
 }
 
-.benefits-list li::before {
-    content: '✓';
+.portfolio-item:hover {
+    transform: translateY(-5px);
+}
+
+.portfolio-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.portfolio-item h3, .portfolio-item p {
+    padding: 0 15px;
+}
+
+.portfolio-item h3 {
+    margin-top: 15px;
     color: var(--primary-color);
-    position: absolute;
-    left: -20px;
+}
+
+.portfolio-item p {
+    margin-bottom: 15px;
 }
 
 /* About Section */
@@ -164,10 +189,12 @@ input, textarea {
     padding: 10px;
     border: 1px solid #ddd;
     border-radius: 5px;
+    font-size: 16px;
 }
 
 textarea {
     height: 150px;
+    resize: vertical;
 }
 
 /* Footer */
@@ -177,6 +204,18 @@ footer {
     background-color: var(--primary-color);
     color: white;
     margin-top: auto;
+}
+
+/* Home Page Specific Styles */
+#home h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+#home p {
+    font-size: 1.2em;
+    max-width: 600px;
+    margin-bottom: 30px;
 }
 
 /* Responsive Design */
@@ -216,4 +255,18 @@ footer {
         align-items: center;
         text-align: center;
     }
+
+    #home h1 {
+        font-size: 2.5em;
+    }
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+main {
+    animation: fadeIn 1s ease-in;
 }
