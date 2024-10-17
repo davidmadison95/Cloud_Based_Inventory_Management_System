@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Inventory Manager Pro</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .about-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .mission-statement {
+            font-size: 1.2rem;
+            font-style: italic;
+            color: #4CAF50;
+            text-align: center;
+            margin-bottom: 2rem;
+            padding: 1rem;
+            border-top: 2px solid #4CAF50;
+            border-bottom: 2px solid #4CAF50;
+        }
+        .developer-profile {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 2rem;
+            flex-wrap: wrap;
+        }
+        .developer-profile img {
+            width: 300px;
+            height: auto;
+            border-radius: 8px;
+            margin-right: 2rem;
+            margin-bottom: 1rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .developer-info {
+            flex: 1;
+            min-width: 200px;
+        }
+        .developer-info h3 {
+            color: #333;
+            margin-bottom: 0.5rem;
+        }
+        .developer-info p {
+            margin-bottom: 0.5rem;
+        }
+        .fraternity-info {
+            margin-top: 1rem;
+            font-style: italic;
+            color: #4CAF50;
+        }
+        .project-highlights h3 {
+            color: #4CAF50;
+            margin-top: 2rem;
+        }
+        .project-highlights ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        .project-highlights li {
+            margin-bottom: 1rem;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+        .project-highlights li::before {
+            content: "✓";
+            color: #4CAF50;
+            position: absolute;
+            left: 0;
+        }
+        @media (max-width: 600px) {
+            .developer-profile {
+                flex-direction: column;
+            }
+            .developer-profile img {
+                margin-right: 0;
+                margin-bottom: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Inventory Manager Pro</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="features.html">Features</a></li>
+                    <li><a href="benefits.html">Benefits</a></li>
+                    <li><a href="about.html" class="active">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <h2>About Inventory Manager Pro</h2>
+            
+            <div class="about-container">
+                <div class="mission-statement">
+                    <p>Our mission is to revolutionize inventory management through innovative cloud-based solutions, empowering businesses to optimize their operations and drive growth.</p>
+                </div>
+
+                <h3>Our Purpose</h3>
+                <p>At Inventory Manager Pro, we're dedicated to solving the complex challenges of modern inventory management. Our cloud-based system is designed to streamline operations, reduce costs, and provide real-time insights that drive informed decision-making.</p>
+
+                <div class="project-highlights">
+                    <h3>Project Highlights</h3>
+                    <ul>
+                        <li>Real-time tracking of products, orders, and shipments</li>
+                        <li>30% improvement in stock management efficiency</li>
+                        <li>User authentication for secure access</li>
+                        <li>Automated reporting features reducing manual tracking by 20%</li>
+                        <li>Low stock alerts to prevent stockouts</li>
+                    </ul>
+                </div>
+
+                <div class="developer-profile">
+                    <img src="david_madison.jpg" alt="David Madison, Developer of Inventory Manager Pro">
+                    <div class="developer-info">
+                        <h3>David Madison</h3>
+                        <p>Full Stack Developer</p>
+                        <p>B.S. in Information Technology (Expected May 2025)</p>
+                        <p>American Military University</p>
+                        <div class="fraternity-info">
+                            <p>Member of Kappa Alpha Psi Fraternity, Inc.</p>
+                            <p>Zeta Omega Chapter</p>
+                        </div>
+                    </div>
+                </div>
+
+                <p>Inventory Manager Pro is being developed by David Madison, a passionate Information Technology student with a focus on Full Stack Programming. With a strong academic background and practical experience in project management and data analysis, David brings a unique perspective to solving inventory challenges.</p>
+
+                <p>Leveraging skills in Python, JavaScript, SQL, and cloud technologies, this project aims to create a robust, user-friendly solution that meets the evolving needs of businesses in managing their inventory effectively.</p>
+
+                <p>David's commitment to excellence extends beyond academics. As a member of Kappa Alpha Psi Fraternity, Inc., he embodies the values of achievement and leadership, which are reflected in the development of Inventory Manager Pro.</p>
+
+                <p>Our goal is to continually innovate and improve our system, providing businesses with the tools they need to thrive in today's fast-paced market environment.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Inventory Manager Pro. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
