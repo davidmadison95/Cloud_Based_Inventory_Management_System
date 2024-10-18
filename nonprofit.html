@@ -6,44 +6,6 @@
     <title>Non-Profit Initiatives - WebCraft Pro</title>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <style>
-        .nonprofit-container {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-        }
-        .nonprofit-item {
-            background-color: var(--card-background);
-            border-radius: 10px;
-            padding: 1.5rem;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-        .nonprofit-item:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-        }
-        .nonprofit-item h3 {
-            color: var(--secondary-color);
-            margin-bottom: 1rem;
-        }
-        .mission-section {
-            background-color: var(--primary-color);
-            color: white;
-            padding: 2rem;
-            border-radius: 10px;
-            margin-bottom: 2rem;
-        }
-        .mission-section h2 {
-            font-size: 2.2rem;
-            margin-bottom: 1rem;
-            color: white;
-        }
-        .mission-section p {
-            font-size: 1.2rem;
-            font-weight: 600;
-        }
-    </style>
 </head>
 <body>
     <nav>
@@ -74,8 +36,8 @@
         <div class="section-spacer"></div>
 
         <h2>Our Initiatives</h2>
-        <div class="nonprofit-container">
-            <div class="nonprofit-item">
+        <div class="card-container">
+            <div class="card">
                 <h3>Kappa Alpha Psi Fraternity, Inc.</h3>
                 <p>As a member of Kappa Alpha Psi Fraternity, Inc., Zeta Omega Chapter, I'm actively involved in various community service projects and initiatives aimed at youth development and education.</p>
                 <ul>
@@ -84,7 +46,7 @@
                     <li>Community clean-up events</li>
                 </ul>
             </div>
-            <div class="nonprofit-item">
+            <div class="card">
                 <h3>Community Websites Project</h3>
                 <p>We provide pro bono web development services to local non-profit organizations, helping them establish a strong online presence.</p>
                 <ul>
