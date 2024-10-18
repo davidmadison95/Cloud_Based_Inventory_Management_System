@@ -25,37 +25,24 @@
         <h1>Contact Us</h1>
         <p>Ready to start your web project? Get in touch with us today!</p>
 
-        <form id="contactForm">
-            <input type="text" id="name" placeholder="Your Name" required>
-            <input type="email" id="email" placeholder="Your Email" required>
-            <input type="text" id="business" placeholder="Your Business Name">
-            <textarea id="message" placeholder="Tell us about your project" required></textarea>
+        <form action="https://formspree.io/f/xqakkjwr" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <input type="text" name="business" placeholder="Your Business Name">
+            <textarea name="message" placeholder="Tell us about your project" required></textarea>
             <button type="submit" class="cta-button">Send Message</button>
         </form>
+
+        <div class="contact-info">
+            <h3>Other Ways to Reach Us</h3>
+            <p>Email: davidmadison95@yahoo.com</p>
+            <p>Phone: (123) 456-7890</p>
+            <p>Address: Norman, Oklahoma, United States</p>
+        </div>
     </main>
 
     <footer>
         <p>&copy; 2024 WebCraft Pro. All rights reserved.</p>
     </footer>
-
-    <script>
-        document.getElementById('contactForm').addEventListener('submit', function(event) {
-            event.preventDefault();
-            
-            var name = document.getElementById('name').value;
-            var email = document.getElementById('email').value;
-            var business = document.getElementById('business').value;
-            var message = document.getElementById('message').value;
-            
-            var mailtoLink = 'mailto:davidmadison95@yahoo.com'
-                + '?subject=' + encodeURIComponent('New Contact from WebCraft Pro')
-                + '&body=' + encodeURIComponent('Name: ' + name + '\n'
-                    + 'Email: ' + email + '\n'
-                    + 'Business: ' + business + '\n\n'
-                    + 'Message:\n' + message);
-            
-            window.location.href = mailtoLink;
-        });
-    </script>
 </body>
 </html>
