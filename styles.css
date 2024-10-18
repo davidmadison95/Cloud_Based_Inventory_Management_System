@@ -1,4 +1,4 @@
-/* Professional, Fun, and Eye-Appealing Styles for WebCraft Pro with Fixed Footer */
+/* Complete Styles for WebCraft Pro */
 
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap');
 
@@ -72,7 +72,7 @@ nav {
     transition: color 0.3s ease;
 }
 
-.nav-links a:hover {
+.nav-links a:hover, .nav-links a.active {
     color: var(--accent-color);
 }
 
@@ -110,6 +110,20 @@ h1::after {
 
 p {
     margin-bottom: 1.5rem;
+}
+
+/* Section Spacer */
+.section-spacer {
+    margin: 3rem 0;
+}
+
+.section-spacer::after {
+    content: '';
+    display: block;
+    width: 50%;
+    height: 2px;
+    background-color: var(--accent-color);
+    margin: 0 auto;
 }
 
 /* Card Styles */
