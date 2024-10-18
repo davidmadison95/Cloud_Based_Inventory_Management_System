@@ -4,138 +4,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us - WebCraft Pro</title>
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <style>
-        .about-container {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 2rem;
-        }
-        .about-section {
-            flex: 1;
-            min-width: 300px;
-        }
-        .skills-list {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-            margin-top: 10px;
-        }
-        .skill-tag {
-            background-color: var(--secondary-color);
-            color: white;
-            padding: 5px 10px;
-            border-radius: 5px;
-            font-size: 0.9em;
-        }
-        .profile-section {
-            text-align: center;
-            margin-bottom: 2rem;
-        }
-        .profile-section img {
-            width: 150px;
-            height: 150px;
-            object-fit: cover;
-            border-radius: 50%;
-            margin-bottom: 1rem;
-        }
-    </style>
 </head>
 <body>
-    <nav id="side-nav">
-        <div class="nav-logo">WebCraft Pro</div>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="portfolio.html">Portfolio</a></li>
-            <li><a href="about.html" class="active">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
+    <nav>
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">WebCraft Pro</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="about.html" class="active">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
     </nav>
 
     <main>
-        <section id="about">
-            <h1>About WebCraft Pro</h1>
-            
-            <div class="profile-section">
-                <img src="david_madison.jpg" alt="David Madison, Founder of WebCraft Pro">
+        <h1>About WebCraft Pro</h1>
+        
+        <div class="profile-section">
+            <img src="david_madison.jpg" alt="David Madison" class="profile-image">
+            <div>
                 <h2>David Madison</h2>
                 <p>Founder & Lead Developer</p>
                 <p>B.S. in Information Technology (Expected May 2025)</p>
                 <p>American Military University | GPA: 3.93</p>
                 <p>Member of Kappa Alpha Psi Fraternity, Inc., Zeta Omega Chapter</p>
             </div>
+        </div>
 
-            <p>WebCraft Pro was founded by David Madison, a passionate web developer dedicated to helping businesses establish a strong online presence. With a background in Information Technology and a keen eye for design, David creates websites that not only look great but also drive results for his clients.</p>
-            
-            <div class="about-container">
-                <div class="about-section">
-                    <h3>Technical Skills</h3>
-                    <div class="skills-list">
-                        <span class="skill-tag">Python</span>
-                        <span class="skill-tag">JavaScript</span>
-                        <span class="skill-tag">jQuery</span>
-                        <span class="skill-tag">SQL</span>
-                        <span class="skill-tag">NoSQL (MongoDB)</span>
-                        <span class="skill-tag">ReactJs</span>
-                        <span class="skill-tag">HTML5</span>
-                        <span class="skill-tag">CSS3</span>
-                        <span class="skill-tag">Git</span>
-                        <span class="skill-tag">GitHub</span>
-                        <span class="skill-tag">MySQL</span>
-                    </div>
-                </div>
-                
-                <div class="about-section">
-                    <h3>Tools & Technologies</h3>
-                    <div class="skills-list">
-                        <span class="skill-tag">Visual Studio Code</span>
-                        <span class="skill-tag">Chrome Developer Tools</span>
-                        <span class="skill-tag">Web Analytics</span>
-                        <span class="skill-tag">Networking Concepts</span>
-                        <span class="skill-tag">Object Oriented Design</span>
-                    </div>
-                </div>
-            </div>
+        <p>WebCraft Pro was founded by David Madison, a passionate web developer dedicated to helping businesses establish a strong online presence. With a background in Information Technology and a keen eye for design, David creates websites that not only look great but also drive results for his clients.</p>
 
-            <div class="about-container">
-                <div class="about-section">
-                    <h3>Areas of Expertise</h3>
-                    <ul>
-                        <li>Web Design and Development</li>
-                        <li>Cloud Security</li>
-                        <li>User Experience Design</li>
-                        <li>Data Analytics</li>
-                    </ul>
-                </div>
+        <h3>Skills & Expertise</h3>
+        <div class="skills-list">
+            <span class="skill-tag">HTML5</span>
+            <span class="skill-tag">CSS3</span>
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">React.js</span>
+            <span class="skill-tag">Node.js</span>
+            <span class="skill-tag">SQL</span>
+            <span class="skill-tag">MongoDB</span>
+            <span class="skill-tag">Git</span>
+            <span class="skill-tag">Responsive Design</span>
+            <span class="skill-tag">SEO</span>
+            <span class="skill-tag">UI/UX Design</span>
+        </div>
 
-                <div class="about-section">
-                    <h3>Soft Skills</h3>
-                    <ul>
-                        <li>Problem-Solving</li>
-                        <li>Self-Learning</li>
-                        <li>Communication</li>
-                        <li>Presentation</li>
-                        <li>Adaptability</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="about-section">
-                <h3>Relevant Coursework</h3>
-                <ul>
-                    <li>Intermediate Web Development</li>
-                    <li>Web Development Using JavaScript</li>
-                    <li>MongoDB and Python</li>
-                    <li>jQuery</li>
-                    <li>Networking Concepts</li>
-                    <li>Object Oriented Design</li>
-                    <li>Database Concepts</li>
-                    <li>Introduction to Web Analytics</li>
-                </ul>
-            </div>
-        </section>
+        <h3>Our Mission</h3>
+        <p>At WebCraft Pro, we're committed to delivering tailored web solutions that align with our clients' business objectives. As a new company, we're excited to work closely with each client, understanding their unique needs and helping them succeed in the digital landscape.</p>
     </main>
 
     <footer>
