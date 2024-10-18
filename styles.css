@@ -208,7 +208,7 @@ input:focus, textarea:focus {
     flex-wrap: wrap;
     gap: 0.5rem;
     margin-top: 1rem;
-    margin-bottom: 2rem;  /* Added margin to create space after skills list */
+    margin-bottom: 2rem;
 }
 
 .skill-tag {
