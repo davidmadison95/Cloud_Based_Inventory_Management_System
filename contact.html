@@ -4,144 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us - WebCraft Pro</title>
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <style>
-        .contact-container {
-            background-color: #ffffff;
-            border-radius: 20px;
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-            overflow: hidden;
-            max-width: 1000px;
-            margin: 0 auto;
-        }
-        .contact-header {
-            background-color: var(--primary-color);
-            color: white;
-            padding: 2rem;
-            text-align: center;
-        }
-        .contact-header h1 {
-            margin-bottom: 0.5rem;
-        }
-        .contact-content {
-            display: flex;
-            flex-wrap: wrap;
-        }
-        .contact-form, .contact-info {
-            flex: 1;
-            padding: 2rem;
-            min-width: 300px;
-        }
-        .contact-form h2, .contact-info h2 {
-            margin-bottom: 1rem;
-            color: var(--primary-color);
-        }
-        .form-group {
-            margin-bottom: 1rem;
-        }
-        .form-group label {
-            display: block;
-            margin-bottom: 0.5rem;
-            color: var(--text-color);
-        }
-        .form-group input, .form-group textarea {
-            width: 100%;
-            padding: 0.75rem;
-            border: 1px solid #e0e0e0;
-            border-radius: 5px;
-            font-family: 'Quicksand', sans-serif;
-        }
-        .form-group textarea {
-            height: 150px;
-        }
-        .contact-info-item {
-            display: flex;
-            align-items: center;
-            margin-bottom: 1rem;
-        }
-        .contact-info-item i {
-            margin-right: 1rem;
-            color: var(--primary-color);
-            font-size: 1.2rem;
-        }
-        .social-links {
-            display: flex;
-            gap: 1rem;
-            margin-top: 1rem;
-        }
-        .social-links a {
-            color: var(--primary-color);
-            font-size: 1.5rem;
-            transition: color 0.3s ease;
-        }
-        .social-links a:hover {
-            color: var(--accent-color);
-        }
-    </style>
 </head>
 <body>
-    <nav id="side-nav">
-        <div class="nav-logo">WebCraft Pro</div>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="portfolio.html">Portfolio</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html" class="active">Contact</a></li>
-        </ul>
+    <nav>
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">WebCraft Pro</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </div>
     </nav>
 
     <main>
-        <div class="contact-container">
-            <div class="contact-header">
-                <h1>Get in Touch</h1>
-                <p>We'd love to hear from you! Let's discuss how we can help your business grow online.</p>
-            </div>
-            <div class="contact-content">
-                <div class="contact-form">
-                    <h2>Send Us a Message</h2>
-                    <form>
-                        <div class="form-group">
-                            <label for="name">Your Name</label>
-                            <input type="text" id="name" name="name" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Your Email</label>
-                            <input type="email" id="email" name="email" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="business">Your Business Name</label>
-                            <input type="text" id="business" name="business">
-                        </div>
-                        <div class="form-group">
-                            <label for="message">Your Message</label>
-                            <textarea id="message" name="message" required></textarea>
-                        </div>
-                        <button type="submit" class="cta-button">Send Message</button>
-                    </form>
-                </div>
-                <div class="contact-info">
-                    <h2>Contact Information</h2>
-                    <div class="contact-info-item">
-                        <i class="fas fa-envelope"></i>
-                        <p>davidmadison95@yahoo.com</p>
-                    </div>
-                    <div class="contact-info-item">
-                        <i class="fas fa-phone"></i>
-                        <p>(478) 229-7878</p>
-                    </div>
-                    <div class="contact-info-item">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <p>Norman, Oklahoma, United States</p>
-                    </div>
-                    <h3>Connect With Us</h3>
-                    <div class="social-links">
-                        <a href="www.linkedin.com/in/davidmadison95" target="_blank"><i class="fab fa-linkedin"></i></a>
-                    </div>
-                </div>
-            </div>
+        <h1>Contact Us</h1>
+        <p>Ready to start your web project? Get in touch with us today!</p>
+
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <input type="text" placeholder="Your Business Name">
+            <textarea placeholder="Tell us about your project" required></textarea>
+            <button type="submit" class="cta-button">Send Message</button>
+        </form>
+
+        <div class="contact-info">
+            <h3>Other Ways to Reach Us</h3>
+            <p>Email: info@webcraftpro.com</p>
+            <p>Phone: (123) 456-7890</p>
+            <p>Address: Norman, Oklahoma, United States</p>
         </div>
     </main>
 
